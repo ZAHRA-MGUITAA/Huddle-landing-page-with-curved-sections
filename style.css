@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+:root{
+  --Pink : hsl(322, 100%, 66%);
+  --Light-Pink:hsl(321, 100%, 78%);
+  --Light-Red : hsl(0, 100%, 63%);
+  --Very-Dark-Cyan:hsl(192, 100%, 9%);
+  --Very-Pale-Blue:hsl(207, 100%, 98%);
+}
+
 p {
   font-family: "Open Sans";
 }
@@ -14,8 +22,8 @@ h4,
 h5,
 h6 {
   font-family: "Poppins";
-  color: hsl(192, 100%, 9%);
-  font-size: 42px;
+  color: var(--Very-Dark-Cyan);
+  font-size: 38px;
   font-weight: 700;
 }
 .container {
@@ -55,10 +63,10 @@ header {
 
 header button {
   background: #ffffff;
-  border: 1px solid hsl(322, 100%, 66%);
+  border: 1px solid var(--Pink);
   padding: 10px 30px;
   border-radius: 25px;
-  color: hsl(322, 100%, 66%);
+  color: var(--Pink);
 }
 
 header img {
@@ -80,7 +88,8 @@ main {
   font-size: 16px;
   line-height: 32px;
   width: 450px;
-  margin: 0px auto 30px auto;
+  margin: 0 auto;
+ 
 }
 
 .hero-content,
@@ -90,18 +99,20 @@ main {
 
 .hero-content button,
 .section-5 button {
-  background: hsl(322, 100%, 66%);
+  background: var(--Pink);
   border: none;
   padding: 20px 60px;
   border-radius: 30px;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
+  margin-top: 30px;
 }
 
 .hero-content h2,
 .section-5 h2 {
   margin-bottom: 25px;
+
 }
 
 .hero-img {
@@ -150,6 +161,9 @@ main {
 .content p {
   width: 70%;
 }
+.section-3 .container .content p {
+  width: 100%;
+}
 
 .section-3 .content {
   padding-left: 120px;
@@ -157,7 +171,7 @@ main {
 
 .section-2,
 .section-4 {
-  background: hsl(207, 100%, 98%);
+  background: var(--Very-Pale-Blue);
 }
 .section-2.shape {
   margin-top: 140px;
@@ -181,7 +195,7 @@ main {
   height: 237px;
 }
 .section-2 {
-  padding: 20px 0px 20px 0px;
+  padding: 20px 0px ;
 }
 .section-2,
 .section-3,
@@ -189,12 +203,12 @@ main {
   margin-top: 70px;
 }
 .section-3 {
-  margin-top: 215px;
-  margin-bottom: 160px;
+
+  margin: 215px 0px 160px 0px;
 }
 .section-5 {
-  margin-top: 290px;
-  margin-bottom: 130px;
+ 
+  margin: 290px 0px 130px 0px;
 }
 
 .section-4.shape {
@@ -225,7 +239,7 @@ main {
 footer .container {
   display: flex;
   justify-content: space-between;
-  background-color: hsl(192, 100%, 9%);
+  background-color: var(--Very-Dark-Cyan);
   color: #ffffff;
   margin-top: 70px;
   padding-bottom: 60px;
@@ -258,8 +272,8 @@ img.logo {
 }
 
 .form button {
-  padding: 15px 50px 15px 50px;
-  background: hsl(322, 100%, 66%);
+  padding: 15px 50px ;
+  background: var(--Pink);
   border: none;
   border-radius: 5px;
   color: #ffffff;
