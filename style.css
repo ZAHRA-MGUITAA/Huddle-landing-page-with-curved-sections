@@ -27,7 +27,7 @@ h6 {
 /**** small screen ***/
 
 @media (min-width: 768px) {
-  body {
+  .container {
     width: 750px;
   }
 }
@@ -35,7 +35,7 @@ h6 {
 /*** medium screen  **/
 
 @media (min-width: 992px) {
-  body {
+  .container {
     width: 990px;
   }
 }
@@ -43,8 +43,8 @@ h6 {
 /** large screen **/
 
 @media (min-width: 1200px) {
-  body {
-    width: 1440px;
+  .container {
+    width: 1170px;
   }
 }
 
